@@ -83,5 +83,22 @@ public class StockMediator implements Mediator
         }
     }
 
+    public void getStockOfferings()
+    {
+        System.out.println("\nStocks for Sale");
+
+        for( StockOffer offer : stockSellOffers )
+        {
+            System.out.println(offer.getStockShares()  +  " of " + offer.getStockSymbol());
+        }
+
+        System.out.println("\nStocks Buy Offers");
+
+        for( StockOffer offer : stockBuyOffers )
+        {
+            System.out.println(offer.getStockShares()  +  " of " + offer.getStockSymbol());
+        }
+    }
+
 
 }
